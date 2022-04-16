@@ -1,32 +1,65 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+    background-color: darkgray;
+    min-height: 100%;
 }
 
 header {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 50px;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    padding: 10px;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: #ffffff;
+}
+
+section.image {
+    background-color: rgb(46, 46, 46);
+    color: #ffffff;
+}
+
+section.image > p {
+    background-color: #0000007a;
+    width: 400px;
+    padding: 4px;
 }
 
 footer {
     background-color: #000000;
-    color: #ffffff;
     text-align: center;
-}
-
-div.poem {
-    
+    color: #ffffff;
+    padding: 20px;
 }
